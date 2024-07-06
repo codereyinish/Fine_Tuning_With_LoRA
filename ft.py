@@ -147,7 +147,7 @@ trainer.train()
 #Trained Model Performance
 #move model to .mps for better GPU computation on Apple's Chip
 model.to('mps')
-print("Untrained_Model_Perfomance")
+print("Trained_Model_Perfomance")
 print("---------------")
 for text in text_list:
       inputs = tokenizer.encode(text, return_tensors="pt").to("mps")
